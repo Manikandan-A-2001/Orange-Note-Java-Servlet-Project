@@ -1,0 +1,170 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Improved font style */
+}
+
+body {
+    display: flex;
+}
+
+.parent {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.notevisual {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #FFDE4D; /* Light gray for a cleaner look */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+}
+.notevisual form{
+	flex:0;
+}
+
+.title {
+    height: 15%; /* Adjusted for better proportion */
+    background-color: #FFB22C; 
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff; /* White text for better readability */
+}
+
+.notes {
+    height: 85%; /* Adjusted proportion */
+    background-color: #F3FEB8; /* White background for content area */
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    color: #333; /* Dark text color for readability */
+}
+
+.notelist {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #F3FEB8; /* Light orange background */
+    max-height: calc(100vh - 20px);
+    overflow-y: auto;
+}
+
+.option {
+    width: 100%;
+    min-height: 60px; /* Adjusted for better spacing */
+    height: auto; /* Allow height to adjust based on content */
+    background-color: #FFB22C; /* Refined orange color */
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    flex-shrink: 0;
+    padding: 15px; /* Increased padding */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.option p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    font-size: 1em; /* Adjust font size as needed */
+    color: #fff; /* White text for contrast */
+}
+
+.title h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%; /* Full width of title */
+    margin: 0;
+    font-size: 1.5em; /* Adjusted font size */
+    color: #FF4C4C; /* White text */
+}
+
+    .title textarea {
+        width: 100%; /* Make the textarea full width */
+        height: 100%; /* Make the textarea full height */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        padding: 10px; /* Optional: Add some padding for better appearance */
+        font-size: inherit; /* Inherit font size from h1 */
+        font-family: inherit; /* Inherit font family from h1 */
+        border: none; 
+        resize: none; 
+        outline: none; /* Remove the default focus outline */
+        background-color: #FFB22C;
+    }
+
+    .notes textarea {
+        width: 100%;
+        height: 90%;
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: inherit;
+        border: none;
+        font-family: Arial, sans-serif;
+        border-radius: 10px;
+        resize: none; /* Prevent resizing */
+        outline: none; /* Remove default focus outline */
+        background-color: #F3FEB8;
+    }
+
+    .notes input[type="submit"] {
+        margin-top: 10px;
+        width: 100px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        background-color: #0066cc;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .notes input[type="submit"]:hover {
+        background-color: #005bb5;
+    }
+    
+    a {
+    text-decoration: none; /* Remove underline */
+    color: #F3FEB8; /* Default link color */
+    font-size: 20px; /* Default font size */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+	/* Hover state */
+	a:hover {
+	    font-size: 22px; /* Increase size on hover */
+	    color: #0056b3; /* Change color on hover */
+	}
+	
+	/* Active (clicked) state */
+	a:active {
+	    color: #F3FEB8; /* Maintain the color when clicked */
+	}
